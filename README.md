@@ -13,7 +13,7 @@ Mockgoose provides test database by spinning up mongod on the back when mongoose
 To install the latest official version, use NPM:
 
 ```bash
-npm install mockgoose --save-dev
+npm install mockgoose-fix --save-dev
 ```
 
 ## Usage

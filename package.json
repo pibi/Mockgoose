@@ -3,7 +3,7 @@
   "main": "built/mockgoose-fix.js",
   "types": "built/mockgoose-fix.d.ts",
   "description": "Mockgoose is an in memory database mock to allow for testing of applications that rely on Mongoose.",
-  "version": "7.3.5",
+  "version": "7.3.6",
   "author": {
     "name": "Anthony McCormick",
     "email": "anthony.mccormick@gmail.com"
