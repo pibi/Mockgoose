@@ -5,13 +5,13 @@ var portfinder = require("portfinder");
 var os = require("os");
 var path = require("path");
 var fs = require("fs-extra");
-var mongodb_prebuilt_1 = require("mongodb-prebuilt");
+var mongodb_prebuilt_https_1 = require("mongodb-prebuilt-https");
 var mockgoose_helper_1 = require("./mockgoose-helper");
 //const uuidV4 = require('uuid/v4');
 var uuidV4 = require('uuid/v4');
-var Mockgoose = (function () {
+var Mockgoose = /** @class */ (function () {
     function Mockgoose(mongooseObj) {
-        this.mongodHelper = new mongodb_prebuilt_1.MongodHelper();
+        this.mongodHelper = new mongodb_prebuilt_https_1.MongodHelper();
         this.debug = Debug('Mockgoose');
         this.helper = new mockgoose_helper_1.MockgooseHelper(mongooseObj, this);
         this.mongooseObj = mongooseObj;
@@ -38,7 +38,8 @@ var Mockgoose = (function () {
                     _this.mockConnectCalls(connectionString);
                     resolve();
                 }, function (e) {
-                    throw e;
+                    reject(e);
+                    // throw e;
                     // return this.prepareStorage();
                 });
             });
@@ -84,7 +85,7 @@ var Mockgoose = (function () {
     return Mockgoose;
 }());
 exports.Mockgoose = Mockgoose;
-var ConnectionWrapper = (function () {
+var ConnectionWrapper = /** @class */ (function () {
     function ConnectionWrapper(functionName, mongoose, connectionString) {
         this.functionName = functionName;
         this.mongoose = mongoose;
@@ -100,4 +101,4 @@ var ConnectionWrapper = (function () {
     return ConnectionWrapper;
 }());
 exports.ConnectionWrapper = ConnectionWrapper;
-//# sourceMappingURL=/Users/winfinit/workspace/personal/Mockgoose/mockgoose.js.map
+//# sourceMappingURL=/home/vlado/WebstormProjects/github/Mockgoose/mockgoose-fix.js.map
