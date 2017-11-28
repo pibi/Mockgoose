@@ -1,4 +1,4 @@
-import { MongodHelper } from '../../mongodb-prebuilt';
+import { MongodHelper } from '../../mongodb-prebuilt-https';
 export declare class Mockgoose {
     mongooseObj: any;
     mongodHelper: MongodHelper;

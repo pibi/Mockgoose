@@ -3,7 +3,7 @@ import * as portfinder from 'portfinder';
 import * as os from 'os';
 import * as path from 'path';
 import * as fs from 'fs-extra';
-import {MongodHelper} from 'mongodb-prebuilt';
+import {MongodHelper} from 'mongodb-prebuilt-https';
 import {MockgooseHelper} from './mockgoose-helper';
 //const uuidV4 = require('uuid/v4');
 const uuidV4: any = require('uuid/v4');
