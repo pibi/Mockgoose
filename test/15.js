@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var path = require('path');
-var Mockgoose = require('../built/mockgoose').Mockgoose;
+var Mockgoose = require('../built/mockgoose-fix').Mockgoose;
 var expect = require('chai').expect;
 var mockgoose = new Mockgoose(mongoose);
 var CatSchema = new mongoose.Schema({name: String});
