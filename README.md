@@ -1,9 +1,14 @@
-[![Build Status](https://travis-ci.org/Mockgoose/Mockgoose.svg?branch=master)](https://travis-ci.org/Mockgoose/Mockgoose)
-
 Please Share on Twitter if you like #mockgoose
 <a href="https://twitter.com/intent/tweet?hashtags=mockgoose&amp;&amp;text=Check%20out%20this%20%23Mongoose%20%23MongoDB%20Mocking%20Framework&amp;tw_p=tweetbutton&amp;url=http%3A%2F%2Fbit.ly%2F19gcHwm&amp;via=omnipitence" style="float:right">
 <img src="https://raw.github.com/Mockgoose/Mockgoose/master/twittershare.png">
 </a>
+
+# Note!!!
+
+This branch exists only because this Pull Requeest is not merged:
+ - https://github.com/winfinit/mongodb-download/pull/28
+
+Once when that is done, i will marck this package as deprecated.
 
 ## What is Mockgoose?
 

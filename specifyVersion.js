@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-let {Mockgoose} = require('./built/mockgoose');
-const {MongoDBDownload} = require('mongodb-download');
+let {Mockgoose} = require('./built/mockgoose-fix');
+const {MongoDBDownload} = require('mongodb-download-https');
 
 let mockgoose = new Mockgoose(mongoose);
 mockgoose.helper.setDbVersion("3.2.1");
