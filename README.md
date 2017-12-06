@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vladotesanovic/Mockgoose.svg?branch=master)](https://travis-ci.org/vladotesanovic/Mockgoose)
+
 # Note!!!
 
 This branch exists only because this Pull Requeest is not merged:
