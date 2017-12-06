@@ -4,6 +4,8 @@ var Mongoose = require('mongoose').Mongoose;
 var mongoose = new Mongoose;
 var Mockgoose = require('../built/mockgoose-fix').Mockgoose;
 var mockgoose = new Mockgoose(mongoose);
+mockgoose.helper.setDbVersion('3.4.3');
+mongoose.Promise = global.Promise;
 
 var Cat = mongoose.model('Cat', {
     name: String
@@ -13,7 +15,7 @@ var Cat = mongoose.model('Cat', {
 describe('issue 179', function() {
     before(function(done) {
 		mockgoose.prepareStorage().then(function() {
-        	mongoose.connect('mongodb://127.0.0.1:27017/TestingDB', function(err) {
+        	mongoose.connect('mongodb://127.0.0.1:27017/TestingDB', { useMongoClient: true,}, function(err) {
         	    done(err);
         	});
 		});

@@ -21,7 +21,7 @@
     "in memory"
   ],
   "scripts": {
-    "test": "mocha",
+    "test": "mocha test --recursive",
     "tsc": "tsc"
   },
   "engines": {

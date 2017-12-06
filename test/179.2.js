@@ -4,6 +4,8 @@ var Mongoose = require('mongoose').Mongoose;
 var mongoose = new Mongoose;
 var Mockgoose = require('../built/mockgoose-fix').Mockgoose;
 var mockgoose = new Mockgoose(mongoose);
+mockgoose.helper.setDbVersion('3.4.3');
+mongoose.Promise = global.Promise;
 
 var Cat = mongoose.model('Cat', {
   name: String
