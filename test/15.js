@@ -9,7 +9,7 @@ mongoose.Promise = global.Promise;
 
 const CatSchema = new mongoose.Schema({name: String});
 let Cat1;
-var Cat2;
+let Cat2;
 
 // create connection to first database
 describe('bug 15', function () {
