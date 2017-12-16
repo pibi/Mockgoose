@@ -1,5 +1,5 @@
 {
-  "name": "mockgoose-fix",
+  "name": "mockgoose",
   "main": "built/mockgoose-fix.js",
   "types": "built/mockgoose-fix.d.ts",
   "description": "Mockgoose is an in memory database mock to allow for testing of applications that rely on Mongoose.",
